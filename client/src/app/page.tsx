@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <div className=''>
-      <main className=''>Hello world</main>
+      <main className='font-extrabold'>Hello world</main>
     </div>
   );
 }

@@ -1,12 +1,13 @@
 /** @format */
 
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+const outfit = localFont({
+  src: './fonts/outfitVF.ttf',
+  variable: '--font-outfit',
+  weight: '100 200 300 400 500 600 700 800 900',
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={`${geistSans.variable} h-full antialiased`}>
+    <html lang='en' className={`${outfit.variable} h-full antialiased`}>
       <body className='min-h-full flex flex-col'>{children}</body>
     </html>
   );
