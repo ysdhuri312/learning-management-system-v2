@@ -3,6 +3,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import Navbar from '@/components/home/Navbar';
 
 const outfit = localFont({
   src: '../../public/fonts/outfitVF.ttf',
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={`${outfit.variable} h-full antialiased`}>
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='min-h-full flex flex-col'>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
