@@ -5,7 +5,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 
 const outfit = localFont({
-  src: './fonts/outfitVF.ttf',
+  src: '../fonts/outfitVF.ttf',
   variable: '--font-outfit',
   weight: '100 200 300 400 500 600 700 800 900',
 });
