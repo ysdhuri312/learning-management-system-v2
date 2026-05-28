@@ -6,8 +6,8 @@ import { assets, dummyTestimonial } from '../../../public/assets';
 export default function Testimonials() {
   return (
     <div className='pt-16 px-8 md:px-0'>
-      <h2 className='text-3xl font-medium text-gray-800'>Testimonials</h2>
-      <p className='md:text-base text-gray-500 mt-3'>
+      <h2 className='text-3xl font-semibold text-gray-800'>Testimonials</h2>
+      <p className='md:text-base text-gray-500 mt-5'>
         Hear from our learners as they share their journeys of transformation,
         success, and how our <br /> platform has made a difference in their
         lives.
@@ -35,7 +35,7 @@ export default function Testimonials() {
               <div className='flex gap-0.5'>
                 {[...Array(5)].map((_, i) => (
                   <Image
-                    className='h-5'
+                    className='w-auto h-auto'
                     key={i}
                     src={
                       i < Math.floor(testimonial.rating)

@@ -9,22 +9,26 @@ export default function Companies() {
       <p className='text-base text-gray-500'>Trusted by learners from</p>
       <div className='flex flex-wrap items-center justify-center gap-6 md:gap-16 md:mt-8 mt-5'>
         <Image
-          className='md:w-28 w-20'
+          className='w-auto h-auto'
           src={assets.microsoft_logo}
           alt='Microsoft'
         />
         <Image
-          className='md:w-28 w-20'
+          className='w-auto h-auto'
           src={assets.walmart_logo}
           alt='Walmart'
         />
         <Image
-          className='md:w-24 w-20'
+          className='w-auto h-auto'
           src={assets.accenture_logo}
           alt='Accenture'
         />
-        <Image className='md:w-24 w-20' src={assets.adobe_logo} alt='Adobe' />
-        <Image className='md:w-24 w-20' src={assets.paypal_logo} alt='Paypal' />
+        <Image className='w-auto h-auto' src={assets.adobe_logo} alt='Adobe' />
+        <Image
+          className='w-auto h-auto'
+          src={assets.paypal_logo}
+          alt='Paypal'
+        />
       </div>
     </div>
   );
