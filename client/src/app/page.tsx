@@ -1,9 +1,11 @@
 /** @format */
 
+import Hero from '@/components/home/Hero';
+
 export default function Home() {
   return (
-    <div className=''>
-      <main className='font-extrabold'>Hello world</main>
-    </div>
+    <main className='flex flex-col items-center space-y-7 text-center'>
+      <Hero />
+    </main>
   );
 }
