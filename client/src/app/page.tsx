@@ -1,5 +1,6 @@
 /** @format */
 
+import CallToAction from '@/components/home/CallToAction';
 import Companies from '@/components/home/Companies';
 import Hero from '@/components/home/Hero';
 import Testimonials from '@/components/home/Testimonials';
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Companies />
       <Testimonials />
+      <CallToAction />
     </main>
   );
 }
