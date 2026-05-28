@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/home/Navbar';
+import Footer from '@/components/home/Footer';
 
 const outfit = localFont({
   src: '../../public/fonts/outfitVF.ttf',
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className='min-h-full flex flex-col'>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
