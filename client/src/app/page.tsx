@@ -2,6 +2,7 @@
 
 import CallToAction from '@/components/home/CallToAction';
 import Companies from '@/components/home/Companies';
+import Courses from '@/components/home/Courses';
 import Hero from '@/components/home/Hero';
 import Testimonials from '@/components/home/Testimonials';
 
@@ -10,6 +11,7 @@ export default function Home() {
     <main className='flex flex-col items-center space-y-7 text-center'>
       <Hero />
       <Companies />
+      <Courses />
       <Testimonials />
       <CallToAction />
     </main>
